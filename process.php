@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$sendgrid = new SendGrid('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');
+$sendgrid = new SendGrid('KEY');
 
 if($_POST["submit"]) {
 	

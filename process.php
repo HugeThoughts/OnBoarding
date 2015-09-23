@@ -2,11 +2,6 @@
 require 'vendor/autoload.php';
 require 'config.php';
 
-// Prevent Direct Access to this file
-debug_backtrace() || die ("Direct access not permitted"); 
-
-
-
 if ($_POST["submit"]) {
     
     $name       = $_POST["name"];

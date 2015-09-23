@@ -1,0 +1,530 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+.nav{
+	background: #fff;
+	height: 60px;
+}
+#logo{
+	background: url('../img/nfnlogo.jpg')no-repeat;
+	width: 160px;
+	height: 32px;
+	display: inline-block;
+	margin-top: 13px;
+	margin-bottom: 10px;
+}
+.menu{
+	display: inline-block;
+	float: right;
+	margin-bottom: 0;
+	margin-top: 22px;
+}
+.menu > li > a{
+	color: #666;
+	text-decoration: none;
+	font-family: 'open sans';
+	font-weight: 400;
+	font-size: 14px;
+}
+.menu > li > a:hover{
+	color: #7CBEC6;
+}
+.banner{
+	background: url('../img/banner.png')no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	height: 35vh;
+	width: 100%;
+	text-align: center;
+}
+#banner-info{
+	padding-top: 100px;
+}
+.banner-hero{
+	color: #fff;
+	font-size: 30px;
+	font-family: 'open sans';
+	font-weight: 300;
+	display: inline-block;
+}
+.banner-info{
+	color: #fff;
+	font-size: 20px;
+	font-family: 'open sans';
+	font-weight: 300;
+	padding-top: 20px;
+}
+#featured-title{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-top: 15px;
+}
+#featured-title > h3{
+	font-size: 24px;
+	font-family: 'open sans';
+	font-weight:300;
+	color: #333;
+	max-width:78%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+form{
+	padding-top: 20px;
+	text-align: center;
+	max-width: 46%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select{
+	background-color: rgba(197,197,197,0.1);
+	border:1px solid rgba(0,0,0,0.05);
+	border-top-color:rgba(0,0,0,0.08);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.12);
+	padding: 12px;
+	width: 358px;
+	border-radius: 3px;
+	font-family: 'open sans';
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 24px;
+	outline: none;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus{
+	border:1px solid rgba(0,0,0,0.05);
+	border-top-color:rgba(0,0,0,0.08);
+	box-shadow: none;
+}
+select{
+	width: 383px;
+	height: 48px;
+}
+::-webkit-input-placeholder {
+    color: rgba(119,119,119,0.9);
+}
+:-moz-placeholder {
+    color: rgba(119,119,119,0.9);
+    opacity:  0.7;
+}
+::-moz-placeholder {
+    color: rgba(119,119,119,0.9);
+    opacity:  0.7;
+}
+:-ms-input-placeholder {
+    color: rgba(119,119,119,0.9);
+}
+.check-head{
+	font-size: 20px;
+	color: #333;
+	font-family: 'open sans';
+	font-weight:300;
+	padding-top: 5px;
+}
+.check-title{
+	font-size: 16px;
+	color: #333;
+	font-family: 'open sans';
+	font-weight:300;
+	margin-top: -25px;
+}
+.check-container{
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 25px;
+	height: 50px;
+	padding-bottom: 10px;
+}
+.radio-container{
+	width:100%;
+	padding-top: 5px;
+	height: 60px;
+}
+.checkOne{
+	width: 54px;
+	height: 24px;
+	border:1px solid #ccc;
+	background-color: #f0f0f0;
+	margin: 20px 26px;
+	border-radius: 50px;
+	position: relative;
+	float: left
+}
+.checkOne label{
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	z-index: 1;
+	left: 7px;
+	background: #777;
+}
+.checkOne input[type=checkbox]:checked + label {
+	left:32px;
+	background: rgba(226,44,44,0.9);
+}
+input[type="checkbox"] {
+display: none;
+}
+input[type="radio"] {
+display: none;
+}
+.radioOne{
+	width: 20px;
+	height: 20px;
+	background: #ddd;
+	margin: 20px 90px 0 10px;
+	border-radius: 100%;
+	position: relative;
+	display: inline-block;
+}
+.radioOne label{
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 1;
+	background: #777;
+	-webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+.radioOne input[type=radio]:checked + label {
+	background: rgba(226,44,44,0.9);
+}
+.radio-title{
+	font-size: 16px;
+	color: #333;
+	font-family: 'open sans';
+	font-weight:300;
+	margin: 0 0 0 15px;
+	display: inline-block;
+	width: 100px;
+}
+.call-for-action{
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+	background: #fff;
+	border: 1px solid rgba(226,44,44,0.9);
+	-webkit-border-radius:4px;
+	   -moz-border-radius:4px;
+	        border-radius:4px;
+	color: rgba(226,44,44,0.9);
+	text-decoration: none;
+	padding: 15px 5px;
+	font-size: 20px;
+	width: 380px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	font-family: 'open sans';
+	font-weight: 400;
+	text-shadow:none;
+}
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+	background: rgba(226,44,44,0.9);
+	color: #fff;
+	border: 1px solid rgba(226,44,44,0.9);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+}
+a:visited{
+	color: rgba(226,44,44,0.9);
+}
+.label{
+	color: rgba(226,44,44,0.9)!important;
+	font-family: 'open sans';
+	left: 42px!important;
+}
+.thank-you-wrapper{
+	margin-top: 120px;
+	padding-top: 50px;
+	text-align: center;
+}
+.thank-you-wrapper > h1{
+	font-family: 'open sans';
+	font-weight: 300;
+	color: rgba(226,44,44,0.9);
+	font-size: 60px;
+}
+.thank-you-wrapper > h3{
+	font-family: 'open sans';
+	font-weight: 300;
+	color: #333;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.back-home{
+	font-size: 16px;
+	color: #7EBEC5;
+	text-decoration: none;
+}
+.back-home:hover{
+	color: rgba(226,44,44,0.9);
+}
+.back-home:visited{
+	color: #7EBEC5;
+}
+#opt-college{
+	visibility: hidden;
+	margin-top: -70px;
+}
+.ss-checkbox{
+	text-align: center;
+}
+.ss-radio{
+	text-align: center;
+}
+.btn-container{
+	max-width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+}
+ol{
+	margin: 0;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		form{
+			max-width: 54%;
+		}
+		.btn-container{
+			max-width: 380px;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 768px) {
+		.container{
+			max-width: 600px;
+		}
+		.banner{
+			height: 23vh;
+		}
+		#banner-info{
+			padding-top: 70px;
+		}
+		.label{
+			left: 125px!important;
+		}
+		form{
+			max-width: 93%;
+		}
+		#featured-title > h3{
+			font-size: 22px;
+			max-width: 82%;
+		}
+		.checkOne{
+			margin: 20px 23px;
+		}
+		.btn-primary{
+			padding: 15px 85px;
+		}
+		input[type="text"], input[type="password"], input[type="email"], textarea, select{
+			width: 300px;
+		}
+		select{
+			width:326px;
+		}
+		.check-container{
+			width: 312px;
+		}
+		ol{
+			margin:0;
+		}
+		.btn-container{
+			max-width: 320px;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+			width: 320px;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+			background: #fff;
+		}
+		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+			background: rgba(226,44,44,0.9);
+			color: #fff;
+		}
+	}
+	@media only screen and (max-width: 600px){
+		.container{
+			width: 420px;
+		}
+		.banner{
+			background-size: cover;
+		}
+		#featured-title > h3{
+			font-size: 20px;
+		}
+		.form{
+			max-width: 65%;
+		}
+		.checkOne {
+			margin: 20px 17px;
+		}
+		.btn-container{
+			max-width: 360px;
+		}
+		.check-container{
+			width: 280px;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+			background: #fff;
+		}
+		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+			background: rgba(226,44,44,0.9);
+			color: #fff;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.container{
+			width: 380px;
+		}
+		.check-container{
+			max-width: 270px;
+		}
+		.btn-container{
+			max-width: 330px;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+			background: #fff;
+		}
+		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+			background: rgba(226,44,44,0.9);
+			color: #fff;
+		}
+	}
+	@media only screen and (min-width: 300px) and (max-width: 360px){
+		
+		.banner{
+			height: 30vh;
+		}
+		#banner-info{
+			padding-top: 40px;
+		}
+		.container{
+			width: 300px;
+		}
+		#featured-title {
+			padding-top: 30px;
+			padding-bottom: 10px;
+			margin-top: 5px;
+		}
+		.banner-hero{	
+			font-size: 24px;
+		}
+		.banner-info{
+			color: #fff;
+			font-size: 16px;
+			font-family: 'open sans';
+			font-weight: 400;
+			padding-top: 10px;
+		}
+		.label{
+			left: 10px!important;
+		}
+		form{
+			max-width:96%;
+		}
+		input[type="text"], input[type="password"], input[type="email"], textarea, select{
+			width: 262px;
+		}
+		ol{
+			margin: 0;
+		}
+		#featured-title > h3{
+			font-size: 18px;
+		}
+		.btn-container{
+			max-width: 300px;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+			width: 300px;
+		}
+		select{
+			width:300px;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+			background: #fff;
+		}
+		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
+			background: rgba(226,44,44,0.9);
+			color: #fff;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/

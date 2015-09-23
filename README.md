@@ -10,6 +10,7 @@ git clone https://github.com/HugeThoughts/OnBoarding.git && cd OnBoarding
 mkdir tmp/
 chmod 777 tmp/
 mv config-sample.php config.php
+composer install
 ```
 
 ## Configuration

@@ -1,3 +1,7 @@
+.box{
+    margin-bottom: 20px;
+}
+
 .js .inputfile {
     width: 0.1px;
     height: 0.1px;
@@ -19,7 +23,14 @@
     overflow: hidden;
     padding: 0.625rem 1.25rem;
     /* 10px 20px */
+    color: #8FF025;
+    border: 1px solid currentColor;
 }
+
+.inputfile + label > span{
+    color: #8FF025;
+}
+
 
 .no-js .inputfile + label {
     display: none;
@@ -48,22 +59,10 @@
     /* 4px */
 }
 
-
-
-
-
-.inputfile-2 + label {
-    color: rgba(226,44,44,0.9);
-    border: 1px solid currentColor;
+.inputfile:focus + label,
+.inputfile.has-focus + label,
+{
+    background-color: #8FF025;
+    color: #fff !important;
 }
 
-.inputfile-2:focus + label,
-.inputfile-2.has-focus + label,
-.inputfile-2 + label:hover {
-    color: #722040;
-}
-
-
-.box{
-	margin-bottom: 20px;
-}

@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-$sendgrid = new SendGrid('YOU-SENDGRID-API');
+$sendgrid = new SendGrid('KEY');
 
 if($_POST["submit"]) {
 	

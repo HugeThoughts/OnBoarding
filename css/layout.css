@@ -144,6 +144,15 @@ select{
 	font-weight:300;
 	padding-top: 5px;
 }
+
+.experienced-upload{
+	font-size: 20px;
+	color: #333;
+	font-family: 'open sans';
+	font-weight:300;
+	padding-top: 5px;
+}
+
 .check-title{
 	font-size: 16px;
 	color: #333;

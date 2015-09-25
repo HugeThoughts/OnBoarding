@@ -71,6 +71,7 @@ $(document).ready(function() {
 
     $('#onboardingForm').submit(function() {
 
+
         var $check_interested = $(this).find("input[name='interested[]']:checked");
         var $radio_experience = $(this).find("input[name='experience']:checked");
 
@@ -83,7 +84,29 @@ $(document).ready(function() {
 
         }
     });
+
+        $(".github-profile").hide();
+        $(".experienced-person").hide();
+
+
 });
+
+function githubProfile(value){
+if(value=='show')
+{       $(".github-profile").show();
+        $(".box").hide();
+        $(".experienced-person").show();
+
+}
+ 
+else
+{       $(".github-profile").hide();
+        $(".box").show();
+        $(".experienced-person").hide();
+        
+
+}
+}
 
 
 

@@ -73,20 +73,23 @@
          <ul class="radio-container" role="radiogroup" aria-label="I'd love to be  ">
             <li class="radioOne">
                <p class="radio-title">Fresher</p>
-               <input type="radio" name="experience" value="Fresher" id="fresher" role="radio" >
+               <input type="radio" name="experience" value="Fresher" id="fresher" role="radio" onclick="githubProfile('hide')" >
                <label for="fresher"></label>
             </li>
             <li class="radioOne">
                <p class="radio-title">&lt 3 Year</p>
-               <input type="radio" name="experience" value="Less than 3 Years" id="experience_less_than_3" role="radio" >
+               <input type="radio" name="experience" value="Less than 3 Years" id="experience_less_than_3" role="radio" onclick="githubProfile('show')">
                <label for="experience_less_than_3"></label>
             </li>
             <li class="radioOne">
                <p class="radio-title">&gt 3 Year</p>
-               <input type="radio" name="experience" value="Greater than 3 Years" id="experience_greater_than_3" role="radio">
+               <input type="radio" name="experience" value="Greater than 3 Years" id="experience_greater_than_3" role="radio" onclick="githubProfile('show')">
                <label for="experience_greater_than_3"></label>
             </li>
          </ul>
+
+         <input  type="text" name="github_profile" placeholder="Enter your GitHub Profile URL" class="text-box github-profile">
+
          <div class="box">
             <input type="file" name="resume_upload" id="file-2" class="inputfile inputfile-2" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
             <label for="file-2">
@@ -96,6 +99,13 @@
                <span class="upload-text">Attach Resume</span>
             </label>
          </div>
+
+         <div class="experienced-person">
+         <p>Or</p>
+         <label for="file-2">Upload Your Resume</label>
+            
+         </div>
+
          <input class="btn-primary validate" type="submit" name="submit" value="Send" >
       </form>
       <script src="js/vendor/modernizr-2.8.3.min.js"></script>

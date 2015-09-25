@@ -65,4 +65,12 @@
     background-color: #8FF025;
     color: #fff !important;
 }
+.experienced-person{
+    margin-bottom: 20px;
+}
 
+.experienced-person >label{
+    font-family: 'open sans';
+    color: #8FF025;
+    cursor: pointer;
+}

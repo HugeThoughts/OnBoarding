@@ -258,11 +258,11 @@ display: none;
 }
 .button, button, input[type="submit"], input[type="reset"], input[type="button"]{
 	background: #fff;
-	border: 1px solid #8FF025;
+	border: 1px solid #007200;
 	-webkit-border-radius:4px;
 	   -moz-border-radius:4px;
 	        border-radius:4px;
-	color: #8FF025;
+	color: #007200;
 	text-decoration: none;
 	padding: 15px 5px;
 	font-size: 20px;
@@ -277,9 +277,9 @@ display: none;
 	text-shadow:none;
 }
 .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
-	background: #8FF025;
+	background: #007200;
 	color: #fff;
-	border: 1px solid #8FF025;
+	border: 1px solid #007200;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-o-transition: all .5s ease;

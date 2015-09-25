@@ -23,12 +23,12 @@
     overflow: hidden;
     padding: 0.625rem 1.25rem;
     /* 10px 20px */
-    color: #8FF025;
+    color: #007200;
     border: 1px solid currentColor;
 }
 
 .inputfile + label > span{
-    color: #8FF025;
+    color: #007200;
 }
 
 

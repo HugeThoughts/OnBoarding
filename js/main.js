@@ -1,4 +1,3 @@
-
 // create as many regular expressions here as you need:
 var digitsOnly = /[1234567890]/g;
 var floatOnly = /[0-9\.]/g;
@@ -39,33 +38,35 @@ $('input.text-box').floatlabel({
 
 'use strict';
 
-;( function ( document, window, index )
-{
-    var inputs = document.querySelectorAll( '.inputfile' );
-    Array.prototype.forEach.call( inputs, function( input )
-    {
-        var label    = input.nextElementSibling,
+;
+(function(document, window, index) {
+    var inputs = document.querySelectorAll('.inputfile');
+    Array.prototype.forEach.call(inputs, function(input) {
+        var label = input.nextElementSibling,
             labelVal = label.innerHTML;
 
-        input.addEventListener( 'change', function( e )
-        {
+        input.addEventListener('change', function(e) {
             var fileName = '';
-            if( this.files && this.files.length > 1 )
-                fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+            if (this.files && this.files.length > 1)
+                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
             else
-                fileName = e.target.value.split( '\\' ).pop();
+                fileName = e.target.value.split('\\').pop();
 
-            if( fileName )
-                label.querySelector( 'span' ).innerHTML = fileName;
+            if (fileName)
+                label.querySelector('span').innerHTML = fileName;
             else
                 label.innerHTML = labelVal;
         });
 
         // Firefox bug fix
-        input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
-        input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+        input.addEventListener('focus', function() {
+            input.classList.add('has-focus');
+        });
+        input.addEventListener('blur', function() {
+            input.classList.remove('has-focus');
+        });
     });
-}( document, window, 0 ));
+}(document, window, 0));
 
 $(document).ready(function() {
 
@@ -75,45 +76,51 @@ $(document).ready(function() {
         var $check_interested = $(this).find("input[name='interested[]']:checked");
         var $radio_experience = $(this).find("input[name='experience']:checked");
 
-        !$check_interested.length ? $('.check-error').css('display',"block") :  $('.check-error').css('display',"none")
-        !$radio_experience.length ? $('.radio-error').css('display',"block") :  $('.radio-error').css('display',"none")
-        
-        if(!$radio_experience.length || !$check_interested.length){
+        !$check_interested.length ? $('.check-error').css('display', "block") : $('.check-error').css('display', "none") !$radio_experience.length ? $('.radio-error').css('display', "block") : $('.radio-error').css('display', "none")
+
+        if (!$radio_experience.length || !$check_interested.length) {
 
             return false; // The form will *not* submit
 
         }
     });
 
-        $(".github-profile").hide();
-        $(".experienced-person").hide();
+    $(".github-profile").hide();
+    $(".experienced-person").hide();
+
+    var file = document.getElementById("file-2");
+
+    file.onchange = function() {
+
+        document.getElementById('uploaded-file-name').innerText = document.getElementById("file-2").files[0].name;
+
+        document.getElementById('experienced-upload').innerText = "Change Uploaded File";
+    };
 
 
 });
 
-function githubProfile(value){
-if(value=='show')
-{       $(".github-profile").show();
+function githubProfile(value) {
+    if (value == 'show') {
+        $(".github-profile").show();
         $(".box").hide();
         $(".experienced-person").show();
 
-}
- 
-else
-{       $(".github-profile").hide();
+    } else {
+        $(".github-profile").hide();
         $(".box").show();
         $(".experienced-person").hide();
-        
 
+
+    }
 }
-}
 
 
 
 
-  // $("input[name='interested[]']").change(function() {
-  //       if($(this).is(":checked")) {
+// $("input[name='interested[]']").change(function() {
+//       if($(this).is(":checked")) {
 
-  //           alert("You have clicked it..");
-  //       }
-  //   });
+//           alert("You have clicked it..");
+//       }
+//   });

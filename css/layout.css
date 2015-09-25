@@ -202,7 +202,7 @@ select{
 }
 .checkOne input[type=checkbox]:checked + label {
 	left:32px;
-	background: #8FF025;
+	background: #76C71C;
 }
 input[type="checkbox"] {
 display: none;
@@ -240,7 +240,7 @@ display: none;
 	box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
 }
 .radioOne input[type=radio]:checked + label {
-	background: #8FF025;
+	background: #76C71C;
 }
 .radio-title{
 	font-size: 16px;
@@ -258,11 +258,11 @@ display: none;
 }
 .button, button, input[type="submit"], input[type="reset"], input[type="button"]{
 	background: #fff;
-	border: 1px solid #007200;
+	border: 1px solid #76C71C;
 	-webkit-border-radius:4px;
 	   -moz-border-radius:4px;
 	        border-radius:4px;
-	color: #007200;
+	color: #76C71C;
 	text-decoration: none;
 	padding: 15px 5px;
 	font-size: 20px;
@@ -277,9 +277,9 @@ display: none;
 	text-shadow:none;
 }
 .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
-	background: #007200;
+	background: #76C71C;
 	color: #fff;
-	border: 1px solid #007200;
+	border: 1px solid #76C71C;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-o-transition: all .5s ease;
@@ -287,10 +287,10 @@ display: none;
 	transition: all .5s ease;
 }
 a:visited{
-	color: #8FF025;
+	color: #76C71C;
 }
 .label{
-	color: #8FF025!important;
+	color: #76C71C!important;
 	font-family: 'open sans';
 	left: 42px!important;
 }
@@ -302,7 +302,7 @@ a:visited{
 .thank-you-wrapper > h1{
 	font-family: 'open sans';
 	font-weight: 300;
-	color: #8FF025;
+	color: #76C71C;
 	font-size: 60px;
 }
 .thank-you-wrapper > h3{
@@ -318,7 +318,7 @@ a:visited{
 	text-decoration: none;
 }
 .back-home:hover{
-	color: #8FF025;
+	color: #76C71C;
 }
 .back-home:visited{
 	color: #7EBEC5;
@@ -407,7 +407,7 @@ ol{
 			background: #fff;
 		}
 		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
-			background: #8FF025;
+			background: #76C71C;
 			color: #fff;
 		}
 	}
@@ -437,7 +437,7 @@ ol{
 			background: #fff;
 		}
 		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
-			background: #8FF025;
+			background: #76C71C;
 			color: #fff;
 		}
 	}
@@ -460,7 +460,7 @@ ol{
 			background: #fff;
 		}
 		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
-			background: #8FF025;
+			background: #76C71C;
 			color: #fff;
 		}
 	}
@@ -518,7 +518,7 @@ ol{
 			background: #fff;
 		}
 		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover{
-			background: #8FF025;
+			background: #76C71C;
 			color: #fff;
 		}
 	}

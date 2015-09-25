@@ -23,12 +23,12 @@
     overflow: hidden;
     padding: 0.625rem 1.25rem;
     /* 10px 20px */
-    color: #007200;
+    color: #76C71C;
     border: 1px solid currentColor;
 }
 
 .inputfile + label > span{
-    color: #007200;
+    color: #76C71C;
 }
 
 
@@ -62,7 +62,7 @@
 .inputfile:focus + label,
 .inputfile.has-focus + label,
 {
-    background-color: #8FF025;
+    background-color: #76C71C;
     color: #fff !important;
 }
 .experienced-person{
@@ -71,6 +71,10 @@
 
 .experienced-person >label{
     font-family: 'open sans';
-    color: #8FF025;
+    color: #76C71C;
     cursor: pointer;
+}
+
+#experienced-upload{
+    color:#8FF025;
 }

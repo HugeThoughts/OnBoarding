@@ -38,34 +38,38 @@
       <div id="featured-title">
          <h3>We believe in designing and building beautiful solutions. You can too.</h3>
       </div>
-      <form action="process.php" method="POST" enctype="multipart/form-data">
-         <input required type="text" name="name" placeholder="Name" class="text-box">
-         <input required type="email" name="email" placeholder="Email" class="text-box" >
-         <input required type="text" name="mobile_no" value="" placeholder="Mobile" class="text-box" minlength="10" maxlength="10" onkeypress="return restrictCharacters(this, event, digitsOnly);">
+      <form  id="onboardingForm" action="process.php" method="POST" enctype="multipart/form-data">
+         <input  type="text" name="name" placeholder="Name" class="text-box" required  >
+         <input  type="email" name="email" placeholder="Email" class="text-box" required  >
+         <input  type="text" name="mobile_no" value="" placeholder="Mobile" class="text-box" minlength="10" maxlength="10" onkeypress="return restrictCharacters(this, event, digitsOnly);" required  >
          <div class="check-head">I'm Interested in</div>
-         <ul class="check-container" role="group" aria-label="Interested in  ">
+         <div class="check-error" style="display:none;">You must check at least one interest!</div>
+         <ul class="check-container intrested-group selected" role="group" aria-label="Interested in  " >
             <li class="checkOne">
                <p class="check-title">iOS</p>
-               <input type="checkbox" name="interested[]" value="iOS" id="cb_iOS" role="checkbox" class="valid">
+               <input type="checkbox" name="interested[]" value="iOS" id="cb_iOS"  class="interested-group"  >
                <label for="cb_iOS"></label>
             </li>
             <li class="checkOne">
                <p class="check-title">Android</p>
-               <input type="checkbox" name="interested[]" value="Android" id="cb_android" role="checkbox" class="valid">
+               <input type="checkbox" name="interested[]" value="Android" id="cb_android"  class="interested-group" >
                <label for="cb_android"></label>
             </li>
             <li class="checkOne" >
                <p class="check-title">Frontend</p>
-               <input type="checkbox" name="interested[]" value="Frontend" id="cb_frontend" role="checkbox" class="valid">
+               <input type="checkbox" name="interested[]" value="Frontend" id="cb_frontend"  class="interested-group" >
                <label for="cb_frontend"></label>
             </li>
             <li class="checkOne" >
                <p class="check-title">Backend</p>
-               <input type="checkbox" name="interested[]" value="Backend" id="cb_backend" role="checkbox" class="valid">
+               <input type="checkbox" name="interested[]" value="Backend" id="cb_backend"  class="interested-group" >
                <label for="cb_backend"></label>
             </li>
          </ul>
          <div class="check-head">Experience</div>
+
+         <div class="radio-error" style="display:none;">You must choose your experience!</div>
+
          <ul class="radio-container" role="radiogroup" aria-label="I'd love to be  ">
             <li class="radioOne">
                <p class="radio-title">Fresher</p>
@@ -92,12 +96,13 @@
                <span class="upload-text">Attach Resume</span>
             </label>
          </div>
-         <input class="btn-primary validate" type="submit" name="submit" value="Send" id="ss-submit">
+         <input class="btn-primary validate" type="submit" name="submit" value="Send" >
       </form>
       <script src="js/vendor/modernizr-2.8.3.min.js"></script>
       <script src="js/vendor/jquery.min.js"></script>
       <script src="js/vendor/floatlabels.min.js"></script>
       <script src="js/vendor/jquery.validate.js"></script>
       <script src="js/main.js"></script>
+
    </body>
 </html>

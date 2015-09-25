@@ -66,3 +66,31 @@ $('input.text-box').floatlabel({
         input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
     });
 }( document, window, 0 ));
+
+$(document).ready(function() {
+
+    $('#onboardingForm').submit(function() {
+
+        var $check_interested = $(this).find("input[name='interested[]']:checked");
+        var $radio_experience = $(this).find("input[name='experience']:checked");
+
+        !$check_interested.length ? $('.check-error').css('display',"block") :  $('.check-error').css('display',"none")
+        !$radio_experience.length ? $('.radio-error').css('display',"block") :  $('.radio-error').css('display',"none")
+        
+        if(!$radio_experience.length || !$check_interested.length){
+
+            return false; // The form will *not* submit
+
+        }
+    });
+});
+
+
+
+
+  // $("input[name='interested[]']").change(function() {
+  //       if($(this).is(":checked")) {
+
+  //           alert("You have clicked it..");
+  //       }
+  //   });

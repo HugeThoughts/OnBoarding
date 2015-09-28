@@ -83,6 +83,18 @@ $(document).ready(function() {
             return false; // The form will *not* submit
 
         }
+
+
+        if(document.getElementById("file-2").value == "" && $('input[name=experience]:checked').val()=='Fresher') {
+            
+            $('.upload-error').css('display','block');
+            return false;
+        }
+        else
+        {
+             $('.upload-error').css('display','hidden');
+        }
+
     });
 
         $(".github-profile").hide();
@@ -117,17 +129,6 @@ else
 }
 
 }
-
-
-
-
-  // $("input[name='interested[]']").change(function() {
-  //       if($(this).is(":checked")) {
-
-  //           alert("You have clicked it..");
-  //       }
-  //   });
-
 
 
 

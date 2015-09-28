@@ -82,7 +82,7 @@
 .check-error,.upload-error{
     display: none;
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     color: #ff0033;
 
 }

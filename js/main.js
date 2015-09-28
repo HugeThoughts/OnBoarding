@@ -95,6 +95,16 @@ $(document).ready(function() {
              $('.upload-error').css('display','hidden');
         }
 
+        if($('input[name=experience]:checked').val()!='Fresher' && $('.github-profile').val("") && document.getElementById("file-2").value == "" ) {
+            $('.upload-error').text('You need to enter your GitHub Profile OR attach your resume');
+            $('.upload-error').css('display','block');
+            return false;
+        }
+        else
+        {
+             $('.upload-error').css('display','hidden');
+        }
+
     });
 
         $(".github-profile").hide();
@@ -102,12 +112,12 @@ $(document).ready(function() {
 
         var file = document.getElementById("file-2");
 
-file.onchange = function() {
+        file.onchange = function() {
 
-    document.getElementById('uploaded-file-name').innerText = document.getElementById("file-2").files[0].name;
+            document.getElementById('uploaded-file-name').innerText = document.getElementById("file-2").files[0].name;
 
-    document.getElementById('experienced-upload').innerText = "Change Resume";
-};
+            document.getElementById('experienced-upload').innerText = "Change Resume";
+        };
 
 
 });

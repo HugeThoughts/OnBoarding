@@ -95,7 +95,7 @@ $(document).ready(function() {
              $('.upload-error').css('display','hidden');
         }
 
-        if($('input[name=experience]:checked').val()!='Fresher' && $('.github-profile').val("") && document.getElementById("file-2").value == "" ) {
+        if($('input[name=experience]:checked').val()!='Fresher' && $('.github-profile').val()=="" && document.getElementById("file-2").value == "" ) {
             $('.upload-error').text('You need to enter your GitHub Profile OR attach your resume');
             $('.upload-error').css('display','block');
             return false;

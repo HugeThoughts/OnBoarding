@@ -37,8 +37,6 @@ $('input.text-box').floatlabel({
 });
 
 
-'use strict';
-
 ;( function ( document, window, index )
 {
     var inputs = document.querySelectorAll( '.inputfile' );

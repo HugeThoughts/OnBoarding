@@ -124,7 +124,8 @@ $(document).ready(function() {
 
 function githubProfile(value){
 if(value=='show')
-{       $(".github-profile").show();
+{       $('.upload-error').css('display',"none")
+        $(".github-profile").show();
         $(".box").hide();
         $(".experienced-person").show();
 

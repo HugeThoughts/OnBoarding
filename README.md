@@ -11,6 +11,9 @@ mkdir tmp/
 chmod 777 tmp/
 mv config-sample.php config.php
 composer install
+sudo apt-get install php5-curl
+sudo service apache2 restart
+
 ```
 
 ## Configuration

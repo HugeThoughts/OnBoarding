@@ -39,9 +39,9 @@ $(document).ready(function() {
         var GitHubProfile = $('.github-profile').val();
         var GitHubRegex = new RegExp(/^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_]{1,25}$/igm);
         
-        if (GitHubProfile != '') {
+        if (GitHubProfile != '' && $('input[name=experience]:checked').val()!='Fresher' ) {
         if(GitHubRegex.test(GitHubProfile)){ 
-            return true
+            return true;
             }
             else
             {

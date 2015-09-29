@@ -14,7 +14,7 @@ function restrictCharacters(myfield, e, restrictionType) {
     if (code == 27) {
         this.blur();
         return false;
-    }
+    }   
     // ignore if they are press other keys
     // strange because code: 39 is the down key AND ' key...
     // and DEL also equals .
@@ -37,7 +37,7 @@ $('input.text-box').floatlabel({
 });
 
 
-;( function ( document, window, index )
+( function ( document, window, index )
 {
     var inputs = document.querySelectorAll( '.inputfile' );
     Array.prototype.forEach.call( inputs, function( input )
@@ -102,6 +102,8 @@ $(document).ready(function() {
         {
              $('.upload-error').css('display','hidden');
         }
+
+        // 
 
     });
 

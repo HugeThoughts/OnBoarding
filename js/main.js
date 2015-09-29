@@ -1,3 +1,98 @@
+$(document).ready(function() {
+
+    $('#onboardingForm').submit(function() {
+
+
+        var $check_interested = $(this).find("input[name='interested[]']:checked");
+        var $radio_experience = $(this).find("input[name='experience']:checked");
+
+        !$check_interested.length ? $('.check-error').css('display',"block") :  $('.check-error').css('display',"none")
+        !$radio_experience.length ? $('.radio-error').css('display',"block") :  $('.radio-error').css('display',"none")
+        
+        if(!$radio_experience.length || !$check_interested.length){
+
+            return false; // The form will *not* submit
+
+        }
+
+
+        if(document.getElementById("file-2").value == "" && $('input[name=experience]:checked').val()=='Fresher') {
+            
+            $('.upload-error').css('display','block');
+            return false;
+        }
+        else
+        {
+             $('.upload-error').css('display','hidden');
+        }
+
+        if($('input[name=experience]:checked').val()!='Fresher' && $('.github-profile').val()=="" && document.getElementById("file-2").value == "" ) {
+            $('.upload-error').text('You need to enter your GitHub Profile OR attach your resume');
+            $('.upload-error').css('display','block');
+            return false;
+        }
+        else
+        {
+             $('.upload-error').css('display','hidden');
+        }
+
+        var GitHubProfile = $('.github-profile').val();
+        var GitHubRegex = new RegExp(/^(https?:\/\/)?(www\.)?github\.com\/[a-zA-Z0-9_]{1,25}$/igm);
+        
+        if (GitHubProfile != '') {
+        if(GitHubRegex.test(GitHubProfile)){ 
+            return true
+            }
+            else
+            {
+
+            $('.upload-error').text('Make sure to enter VALID GitHub Profile URL');
+            $('.upload-error').css('display','block');
+            return false;
+            }
+        }
+
+        // 
+
+    });
+
+        $(".github-profile").hide();
+        $(".experienced-person").hide();
+
+        var file = document.getElementById("file-2");
+
+        file.onchange = function() {
+
+            document.getElementById('uploaded-file-name').innerText = document.getElementById("file-2").files[0].name;
+
+            document.getElementById('experienced-upload').innerText = "Change Resume";
+        };
+
+
+});
+
+function githubProfile(value){
+if(value=='show')
+{       $('.upload-error').css('display',"none")
+        $(".github-profile").show();
+        $(".box").hide();
+        $(".experienced-person").show();
+
+}
+ 
+else
+{       $(".github-profile").hide();
+        $(".box").show();
+        $(".experienced-person").hide();
+        
+
+}
+
+}
+
+
+
+
 
 // create as many regular expressions here as you need:
 var digitsOnly = /[1234567890]/g;
@@ -65,81 +160,6 @@ $('input.text-box').floatlabel({
     });
 }( document, window, 0 ));
 
-$(document).ready(function() {
-
-    $('#onboardingForm').submit(function() {
-
-
-        var $check_interested = $(this).find("input[name='interested[]']:checked");
-        var $radio_experience = $(this).find("input[name='experience']:checked");
-
-        !$check_interested.length ? $('.check-error').css('display',"block") :  $('.check-error').css('display',"none")
-        !$radio_experience.length ? $('.radio-error').css('display',"block") :  $('.radio-error').css('display',"none")
-        
-        if(!$radio_experience.length || !$check_interested.length){
-
-            return false; // The form will *not* submit
-
-        }
-
-
-        if(document.getElementById("file-2").value == "" && $('input[name=experience]:checked').val()=='Fresher') {
-            
-            $('.upload-error').css('display','block');
-            return false;
-        }
-        else
-        {
-             $('.upload-error').css('display','hidden');
-        }
-
-        if($('input[name=experience]:checked').val()!='Fresher' && $('.github-profile').val()=="" && document.getElementById("file-2").value == "" ) {
-            $('.upload-error').text('You need to enter your GitHub Profile OR attach your resume');
-            $('.upload-error').css('display','block');
-            return false;
-        }
-        else
-        {
-             $('.upload-error').css('display','hidden');
-        }
-
-        // 
-
-    });
-
-        $(".github-profile").hide();
-        $(".experienced-person").hide();
-
-        var file = document.getElementById("file-2");
-
-        file.onchange = function() {
-
-            document.getElementById('uploaded-file-name').innerText = document.getElementById("file-2").files[0].name;
-
-            document.getElementById('experienced-upload').innerText = "Change Resume";
-        };
-
-
-});
-
-function githubProfile(value){
-if(value=='show')
-{       $('.upload-error').css('display',"none")
-        $(".github-profile").show();
-        $(".box").hide();
-        $(".experienced-person").show();
-
-}
- 
-else
-{       $(".github-profile").hide();
-        $(".box").show();
-        $(".experienced-person").hide();
-        
-
-}
-
-}
 
 
 

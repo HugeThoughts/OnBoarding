@@ -17,7 +17,7 @@ if ($_POST["submit"]) {
     $email      = new SendGrid\Email();
 
     if ($github_profile) {
-        if (isset($file_upload)) {
+        if ($file_upload["error"]==UPLOAD_ERR_OK) {
 
             // When BOTH file uploaded & github is present
 

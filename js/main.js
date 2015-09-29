@@ -2,6 +2,13 @@ $(document).ready(function() {
 
     $('#onboardingForm').submit(function() {
 
+        var $email = $('form input[name="email'); //change form to id or containment selector
+        var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
+        if ($email.val() == '' || !re.test($email.val()))
+        {
+            alert('Please enter a valid email address.');
+            return false;
+        }
 
         var $check_interested = $(this).find("input[name='interested[]']:checked");
         var $radio_experience = $(this).find("input[name='experience']:checked");

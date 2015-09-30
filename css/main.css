@@ -79,7 +79,7 @@
     color:#8FF025;
 }
 
-.check-error,.upload-error{
+.check-error,.upload-error,.email-error{
     display: none;
     margin-top: 10px;
     margin-bottom: 10px;

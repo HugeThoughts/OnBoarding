@@ -6,6 +6,8 @@ $(document).ready(function() {
         if ($email.val() == '' || !re.test($email.val()))
         {
             $('.email-error').css('display','block');
+            $('.email-error').scrollView();
+
             return false;
         }
         else
@@ -29,6 +31,7 @@ $(document).ready(function() {
         if(document.getElementById("file-2").value == "" && $('input[name=experience]:checked').val()=='Fresher') {
             
             $('.upload-error').css('display','block');
+            $('.upload-error').scrollView();
             return false;
         }
         else
@@ -39,6 +42,8 @@ $(document).ready(function() {
         if($('input[name=experience]:checked').val()!='Fresher' && $('.github-profile').val()=="" && document.getElementById("file-2").value == "" ) {
             $('.upload-error').text('You need to enter your GitHub Profile OR attach your resume');
             $('.upload-error').css('display','block');
+            $('.upload-error').scrollView();
+
             return false;
         }
         else
@@ -58,6 +63,7 @@ $(document).ready(function() {
 
             $('.upload-error').text('Make sure to enter VALID GitHub Profile URL');
             $('.upload-error').css('display','block');
+            $('.upload-error').scrollView();
             return false;
             }
         }

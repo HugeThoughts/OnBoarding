@@ -91,7 +91,13 @@ else
 }
 
 
-
+    $.fn.scrollView = function() {
+        return this.each(function() {
+            $('html, body').animate({
+                scrollTop: $(this).offset().top
+            }, 1000);
+        });
+    }
 
 
 // create as many regular expressions here as you need:

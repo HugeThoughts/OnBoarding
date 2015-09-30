@@ -287,7 +287,7 @@ display: none;
 	transition: all .5s ease;
 }
 a:visited{
-	color: #76C71C;
+	color: #333;
 }
 .label{
 	color: #76C71C!important;
@@ -314,15 +314,9 @@ a:visited{
 }
 .back-home{
 	font-size: 16px;
-	color: #7EBEC5;
-	text-decoration: none;
+	color: #333;
 }
-.back-home:hover{
-	color: #76C71C;
-}
-.back-home:visited{
-	color: #7EBEC5;
-}
+
 #opt-college{
 	visibility: hidden;
 	margin-top: -70px;

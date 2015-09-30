@@ -23,7 +23,7 @@
                <img src="img/nfnlogo.jpg">
             </div>
             <ul class="menu">
-               <li><a href="http://nfnlabs.in">Home</a>
+               <li><a href="http://nfnlabs.in" tabindex="-1">Home</a>
                </li>
             </ul>
          </div>
@@ -39,7 +39,7 @@
          <h3>We believe in designing and building beautiful solutions. You can too.</h3>
       </div>
       <form  id="onboardingForm" action="process.php" method="POST" enctype="multipart/form-data">
-         <input  type="text" name="name" placeholder="Name" class="text-box" required  >
+         <input  type="text" name="name" placeholder="Name" class="text-box" required autofocus  >
          <div class="email-error">Please enter a valid email address.</div>
          <input  type="email" name="email" id="email" placeholder="Email" class="text-box"   required>
          <input  type="text" name="mobile_no" value="" placeholder="Mobile" class="text-box" minlength="10" maxlength="10" onkeypress="return restrictCharacters(this, event, digitsOnly);" required  >
@@ -95,7 +95,7 @@
 
          <div class="box">
             <input type="file" name="resume_upload" id="file-2" class="inputfile inputfile-2" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-            <label for="file-2">
+            <label for="file-2" tabindex="0">
                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
                   <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
                </svg>

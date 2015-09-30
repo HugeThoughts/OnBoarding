@@ -1,13 +1,16 @@
 $(document).ready(function() {
 
     $('#onboardingForm').submit(function() {
-
-        var $email = $('form input[name="email'); //change form to id or containment selector
+        var $email = $('#email');
         var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
         if ($email.val() == '' || !re.test($email.val()))
         {
-            alert('Please enter a valid email address.');
+            $('.email-error').css('display','block');
             return false;
+        }
+        else
+        {
+             $('.email-error').css('display','hidden');
         }
 
         var $check_interested = $(this).find("input[name='interested[]']:checked");
@@ -166,6 +169,8 @@ $('input.text-box').floatlabel({
         input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
     });
 }( document, window, 0 ));
+
+
 
 
 

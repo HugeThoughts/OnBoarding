@@ -70,9 +70,7 @@
     cursor: pointer;
 }
 
-#experienced-upload{
-    color:#8FF025;
-}
+
 
 .check-error,.upload-error,.email-error{
     display: none;

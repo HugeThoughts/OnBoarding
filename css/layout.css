@@ -101,10 +101,8 @@ form{
 }
 
 input[type="text"], input[type="password"], input[type="email"], textarea, select{
-	background-color: rgba(197,197,197,0.1);
 	border:1px solid rgba(0,0,0,0.05);
 	border-top-color:rgba(0,0,0,0.08);
-	text-shadow: 0 1px 0 rgba(0,0,0,0.12);
 	padding: 12px;
 	width: 358px;
 	border-radius: 3px;
@@ -113,6 +111,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 	font-size: 16px;
 	margin-bottom: 24px;
 	outline: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.12);
 }
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus{
 	border:1px solid rgba(0,0,0,0.05);

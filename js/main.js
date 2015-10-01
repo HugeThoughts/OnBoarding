@@ -182,8 +182,67 @@ $('input.text-box').floatlabel({
     });
 }( document, window, 0 ));
 
+$('.check_iOS').click(function(event) {
+    if($('#cb_iOS').is(':checked'))
+    {
+        $('#cb_iOS').prop('checked', false);
+    }
+    else
+    {
+        $('#cb_iOS').prop('checked', true);
 
+    }
+});
 
+$('.check_Android').click(function(event) {
+    if($('#cb_android').is(':checked'))
+    {
+        $('#cb_android').prop('checked', false);
+    }
+    else
+    {
+        $('#cb_android').prop('checked', true);
 
+    }
+});
+
+$('.check_Frontend').click(function(event) {
+    if($('#cb_frontend').is(':checked'))
+    {
+        $('#cb_frontend').prop('checked', false);
+    }
+    else
+    {
+        $('#cb_frontend').prop('checked', true);
+
+    }
+});
+
+$('.check_Backend').click(function(event) {
+    if($('#cb_backend').is(':checked'))
+    {
+        $('#cb_backend').prop('checked', false);
+    }
+    else
+    {
+        $('#cb_backend').prop('checked', true);
+
+    }
+});
+
+// $( ".checkOne" ).click(function() {
+//     // alert('This is pressed..'); 
+//     // $('#cb_frontend').prop('checked',true);
+//     currentCheckbox = $(this).children('input[type=checkbox]');
+//     if(currentCheckbox.checked)
+//     {
+//     currentCheckbox.prop('checked', false);
+// }
+// else
+// {
+//         currentCheckbox.prop('checked', true);
+
+// }
+// });
 
 

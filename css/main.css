@@ -87,6 +87,10 @@
 
 }
 
+.exp-container{
+    clear: both !important;
+}
+
 footer{
     margin-top: 100px;
     text-align: center;

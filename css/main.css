@@ -60,7 +60,7 @@
 }
 
 .inputfile:focus + label,
-.inputfile.has-focus + label,
+.inputfile.has-focus + label
 {
     background-color: #76C71C;
     color: #fff !important;
@@ -91,4 +91,8 @@ footer{
     margin-top: 100px;
     text-align: center;
     padding-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
 }

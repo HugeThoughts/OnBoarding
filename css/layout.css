@@ -361,7 +361,7 @@ ol{
 			height: 23vh;
 		}
 		#banner-info{
-			padding-top: 70px;
+			padding-top: 30px;
 		}
 		.label{
 			left: 125px!important;
@@ -386,7 +386,7 @@ ol{
 			width:326px;
 		}
 		.check-container{
-			width: 312px;
+			width: 418px;
 		}
 		ol{
 			margin:0;
@@ -419,13 +419,13 @@ ol{
 			max-width: 65%;
 		}
 		.checkOne {
-			margin: 20px 17px;
+			margin: 20px 8px;
 		}
 		.btn-container{
 			max-width: 360px;
 		}
 		.check-container{
-			width: 280px;
+			width: 100%;
 		}
 		.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
 			background: #fff;
@@ -445,7 +445,7 @@ ol{
 			width: 380px;
 		}
 		.check-container{
-			max-width: 270px;
+			max-width: 320px;
 		}
 		.btn-container{
 			max-width: 330px;
@@ -457,6 +457,13 @@ ol{
 			background: #76C71C;
 			color: #fff;
 		}
+				    .radioOne{
+			    margin: 10px 84px 0 10px;
+			}
+
+			.radio-title{
+			    margin-left: 2px;
+			}
 	}
 	@media only screen and (min-width: 300px) and (max-width: 360px){
 		
@@ -515,6 +522,13 @@ ol{
 			background: #76C71C;
 			color: #fff;
 		}
+		    .radioOne{
+			    margin: 10px 62px 0 10px;
+			}
+
+			.radio-title{
+			    margin-left: 2px;
+			}
 	}
 
 

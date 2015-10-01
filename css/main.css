@@ -11,7 +11,7 @@
     z-index: -1;
 }
 
-.inputfile + label {
+.inputfile + label, .inputfile + label:focus {
     max-width: 80%;
     font-size: 1.25rem;
     /* 20px */
@@ -31,6 +31,8 @@
 }
 
 .inputfile + label > span{
+    font-family:'open sans';
+    font-weight: 400;
     color: #76C71C;
 }
 
@@ -57,12 +59,7 @@
     /* 4px */
 }
 
-.inputfile:focus + label,
-.inputfile.has-focus + label
-{
-    background-color: #76C71C;
-    color: #fff !important;
-}
+
 .experienced-person{
     margin-bottom: 20px;
 }

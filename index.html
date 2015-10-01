@@ -40,11 +40,11 @@
       </div>
       <form  id="onboardingForm" action="process.php" method="POST" enctype="multipart/form-data">
          <input  type="text" name="name" placeholder="Name" class="text-box" required autofocus  >
-         <div class="email-error">Please enter a valid email address.</div>
+         <span class="email-error">Please enter a valid email address.</span>
          <input  type="email" name="email" id="email" placeholder="Email" class="text-box"   required>
          <input  type="text" name="mobile_no" value="" placeholder="Mobile" class="text-box" minlength="10" maxlength="10" onkeypress="return restrictCharacters(this, event, digitsOnly);" required  >
-         <div class="check-head">I'm interested in</div>
-         <div class="check-error">You must check at least one interest!</div>
+         <span class="check-head">I'm interested in</span>
+         <span class="check-error">You must check at least one interest!</span>
          <ul class="check-container intrested-group selected" role="group" aria-label="Interested in  " >
             <li class="checkOne">
                <p class="check-title">iOS</p>
@@ -67,9 +67,7 @@
                <label for="cb_backend"></label>
             </li>
          </ul>
-         <div class="check-head">Experience</div>
-
-         <div class="radio-error" style="display:none;">You must choose your experience!</div>
+         <span class="check-head">Experience</span>
 
          <ul class="radio-container" role="radiogroup" aria-label="I'd love to be  ">
             <li class="radioOne">
@@ -89,7 +87,7 @@
             </li>
          </ul>
          
-         <div class="upload-error">You must attach your resume!</div>
+         <span class="upload-error">You must attach your resume!</span>
 
          <input  type="text" name="github_profile" placeholder="GitHub Profile" class="github-profile">
 

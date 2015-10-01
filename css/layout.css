@@ -159,6 +159,7 @@ select{
 	font-family: 'open sans';
 	font-weight:300;
 	margin-top: -25px;
+	margin-left: -5px
 }
 .check-container{
 	width: 550px;

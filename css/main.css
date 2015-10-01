@@ -60,7 +60,7 @@
 }
 
 .inputfile:focus + label,
-.inputfile.has-focus + label,
+.inputfile.has-focus + label
 {
     background-color: #76C71C;
     color: #fff !important;
